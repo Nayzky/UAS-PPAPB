@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment"
+    android:background="@drawable/bgfix">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/username1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/title_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/username1"
+        android:layout_marginStart="70dp"
+        android:textColorHint="@color/black"
+        android:textSize="18dp"
+        android:background="@drawable/button_bg"
+        android:hint="Username" />
+
+    <ImageView
+        android:id="@+id/email1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_email_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_username"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/title_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_username"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/email1"
+        android:layout_marginStart="70dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_bg"
+        android:textSize="18dp"
+        android:hint="Email" />
+
+    <ImageView
+        android:id="@+id/phone1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_phone_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_email"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/title_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_email"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/phone1"
+        android:layout_marginStart="70dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_bg"
+        android:textSize="18dp"
+        android:hint="Phone" />
+
+    <ImageView
+        android:id="@+id/password1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_password_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_phone"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/title_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/title_phone"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/password1"
+        android:layout_marginStart="70dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_bg"
+        android:textSize="18dp"
+        android:hint="Password" />
+
+    <!-- Checkbox -->
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_password" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/title_password"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:text="By choosing the box you agree to terms and conditions." />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Submit"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
